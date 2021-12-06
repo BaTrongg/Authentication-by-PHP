@@ -21,7 +21,7 @@
             return true;
         }
         
-        function checkLogin($connect){
+        function checkLogin($connect){//Trả về true nếu tên đăng nhập chưa có trong db, ngược lại trả về false
             global $data;
             $sql = "SELECT * FROM users where name = '".$data['name']."'";
             $result = $connect->query($sql);
